@@ -2,10 +2,9 @@
   "name": "secret_gold_cards",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
