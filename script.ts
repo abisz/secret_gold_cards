@@ -7,7 +7,7 @@ d3.csv(dataUrl).then((data) => {
     const table = d3.select('#table').append('table');
     const thead = table.append('thead');
     const tbody = table.append('tbody');
-    return;
+
     thead.append('tr')
         .selectAll('th')
         .data(data.columns)
