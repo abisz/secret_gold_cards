@@ -1,13 +1,12 @@
-import * as d3 from 'd3';
+import { select } from 'd3-selection';
+import { csv } from 'd3-fetch';
 // @ts-ignore
 import dataUrl from 'url:./data/data.csv';
 
-const table = d3.select('#table').append('table');
 
-d3.csv(dataUrl).then((data) => {
-    return;
+csv(dataUrl).then((data) => {
     const { columns } = data;
-    const table = d3.select('#table').append('table');
+    const table = select('#table').append('table');
     const thead = table.append('thead');
     const tbody = table.append('tbody');
 
