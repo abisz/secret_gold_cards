@@ -2,7 +2,10 @@ import * as d3 from 'd3';
 // @ts-ignore
 import dataUrl from 'url:./data/data.csv';
 
+const table = d3.select('#table').append('table');
+
 d3.csv(dataUrl).then((data) => {
+    return;
     const { columns } = data;
     const table = d3.select('#table').append('table');
     const thead = table.append('thead');
